@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin:20px">
+    <button onclick="document.getElementById('p1').innerHTML = laptop;">
+        sort
+    </button>
+    <p id="p1"></p>
+    <script>
+        var laptop = ["Dell","acer","HP","Lenovo"];
+        document.getElementById("p1").innerHTML = laptop;
+        document.write(laptop);
+        document.write("<br>");
+        laptop.sort();
+        document.write(laptop)
+    </script>
+
+    
+		<br>
+		<button onclick="sortim()">Sort Numeric</button>
+
+		<p id="p4"></p>
+
+		<script>
+			var numrat = [40, 100, 1, 5, 25, 10];
+			document.getElementById("p4").innerHTML = numrat;  
+
+			function sortim() 
+            {
+                numrat.sorrt(function(a, b){return a - b});
+                document.getElementById("p4").innerHTML = numrat;
+			}
+		</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    var x = "Shkolla digjitale 'Prizren'"; // te njefishta 
+    document.write(x+ "<br>");
+
+    var y = 'Shkolla Digjitale "Prizren"' ;
+    // te dyfishta
+    document.write(y+ "<br>");
+    </script>
+        <br>
+    <script>
+        var emri= "Arianit";
+        document.write(emri.length + <"br">);
+
+        var mbiemri = "Arianit Tershnjaku";
+        var pozicioni = mbiemri.indexOf("Tershnjaku");
+
+        document.write(pozicioni + "<br>");
+
+        var x="Arianit Tershnjaku Plave Tershnjaku"
+        var y=x.lastIndexOf("Tershnjaku");
+        document.write(y+ "<br>");
+    </script>
+
+<script>
+    // search() method
+    var a = "Arianit Tershnjaku plave";
+    var b = a.search("Tershnjaku"); //
+    document.write(b + "<br>"); // fillon numrimin nga 0
+
+    // charAt() method
+    var e = "Arianit Tershnjaku plave";
+    var f = e.charAt(3); //Kjo metod na mundeson kekrimin e nje karakteri
+    //Nese nuk i caktojme parameter, ateher e merr karakterin e pare
+    document.write(f + "<br>"); // fillon numrimin nga 0
+
+    // charCodeAt() method
+    var g = "Arianit Tershnjaku plave";
+    var h = g.charCodeAt(3); //Kjo metod na mundeson kerkimin e nje karakteri
+    document.write(h + "<br>"); // fillon numrimin nga 0
+
+    // concat() method
+    var g = "Arianit Tershnjaku";
+    var g1 = " Plave";
+    var h = g.concat(g1); //Kjo metod na mundeson bashkimin e stringeve
+    document.write(h + "<br>"); // fillon numrimin nga 0
+  </script>
+  <br /><br />
+
+  <script>
+    var a = "Arianit Tershnjaku Plave";
+    var b = a.silce(3,9);
+    document.write(b + "<br>");
+    
+    var a = "Arianit Tershnjaku Plave";
+    var b = a.silce(-10,-4);
+    document.write(b + "<br>");
+
+    var a = "Arianit Tershnjaku plave";
+    var b = a.silence(10);
+    document.write(b + "<br>");
+  </script>
+
+  <button oneclick="document.getElementById('p1').innerHTML = txt;">
+    Kliko
+  </button>
+
+  <p id="p1">Arianit Tershnjaku Dragash</p>
+
+  <script>
+    var str = document.getElementById("p1").innerHTML;
+    var txt = str.replace("Dragash","Prizren");
+  </script>
+    
+</body>
+</html>

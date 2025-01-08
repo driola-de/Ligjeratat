@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       var z= prompt('Jep moshen')
+        
+       function personi(x,y)
+        
+        {
+            this.emri = x;
+            this.mbiemri = y;
+            this.mosha = z;
+        }
+
+        var a = new personi('Ahmed ','Qazimi ',z);
+        document.write(a.emri + a.mbiemri + a.mosha+"<br>");
+
+        if(z>=18)
+        {
+           document.write('Ju mund te votoni')
+        }
+
+        else{
+            document.write('Ju nuk mund te votoni')
+        }
+
+    </script>
+
+        <p id="Detyra 2" ></p>
+
+        <script>
+
+            var z = prompt('Jep moshen')
+          function mosha()
+          {
+            return z*365
+          }
+          document.write(mosha());
+
+        </script>
+
+        <script>
+           var z= prompt('Sheno numrin')
+           function a()
+           {
+            for(x=1;x<10;x++)
+           {
+            document.write('Shumezimi i numrit'+z+'me'+x+'eshte i barabarte me vleren'+z*x+'<br>')
+           }
+           }
+           document.write(a())
+        
+         </script>
+</body>
+</html>

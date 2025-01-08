@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            var x = "Arianit "
+            var phones = ["phones","Samsung","Nokia"];
+            var numer = [10,20,30];
+            document.write(x+ "<br>");
+            document.write(phones+"<br>");
+            document.write(numer+"<br>");
+            document.write(phones [2] + "<br>");
+            document.write(phones.length);
+            document.write(phones [phones.length-1] + "<br>");
+        </script>
+              
+		<script>
+			// Si mund te e nxjerrim elementin e fundit te Array
+			var phones = ["Iphone", "Samsung", "Nokia"]; 
+            
+           
+            
+           	document.write(phones[phones.length-1])
+			document.write("<br>");
+            phones[phones.length]="HTC";
+            document.write(phones);
+            document.write("<br>");
+            
+			var last = phones[phones.length -1];	//per nxjerrjen e elementit te fundit
+			document.write(last);
+		</script>
+		<br>
+		<br>
+		<h2> Disa metoda te Array</h2>
+		<script>
+			var x = [5,5,7,8,9]; 
+			var y = x.toString();  // per ta kthyre array ne string
+			document.write(y+10);
+		</script>
+		<br>
+		<br>
+		<script>
+			var x = [5,5,7,8,9]; 
+			var y = x.join("");     // per ti lidhur apo bashkuar elementet e array
+			document.write(y);
+		</script>
+        <br>
+		<br>
+        <button onclick="document.getElementById('p1').innerHTML = txt;">
+            Kliko
+          </button>
+        
+          <p id='p1'></p>
+        
+          <script>
+          
+            var txt = ["Prishtin","Prizren","Dragash"];
+          </script>
+          
+          <script>
+            var phones=["iphone","samsung","nokia"]
+            phones.pop()
+            document.write(phones)
+          </script>
+        <br>
+        <script>
+            var phones=["iphone","samsung","nokia"]
+            phones.push("htc")
+            document.write(phones)
+        </script>
+        <br>
+        <script>
+            var phones=['iphone','samsung','nokia','htc'];
+            phones.shift()
+            document.write(phones)
+        </script>
+        <br>
+        <script>
+            var phones=['iphone','samsung','nokia','htc'];
+            phones.unshift('HP')
+            document.write(phones)
+        </script>
+
+        <br>
+        <script>
+            var phones=['iphone','samsung','nokia','htc'];
+            phones.splice(2, 2, 'vivo','xiaomi');
+            document.write(phones)
+        </script>
+        <br>
+        <script>
+            // splice() method  --Perdoret per shtimin e me shume elementeve ne pozita te ndryshme te array
+                var phones = ['iphone','samsung','nokia','htc']; 
+                phones.splice(3, 2, 'vivo','xiaomi');		//Parametri i pare tregon poziten ku do te vendosen vlerat
+                document.write(phones); 				//Parametri i dyte tregon sa elemente do te fshihen
+            </script>
+            <br>
+            <br>
+            <script>
+            // splice() method  --Kjo metod mund te perdoret edhe vetem per te fshire elemente tek nje array
+                var phones = ['iphone','samsung','nokia','htc']; 
+                phones.splice(1,2);		//Parametri i pare tregon poziten ku do te vendosen vlerat
+                document.write(phones); 				//Parametri i dyte tregon sa elemente do te fshihen
+            </script>
+            <br>
+            <br>
+            <script>
+            // concat() method  --Kjo metod perdoret per te bashkuar dy array
+                var phones = ['iphone','samsung','nokia','htc'];
+                var phones1 = ['iphone','samsung','nokia','htc'];
+                var smart =phones.concat(phones1);		//Mund te bashkojme edhe dy e me shume array(arry1,array2,...)
+                document.write(smart); 				
+                </script>
+</body>
+</html>

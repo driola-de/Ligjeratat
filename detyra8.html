@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p2" style="color: blue;"></p>
+    <script>
+        var vargu = ['Ferizaj','Gjakove','Malisheve','Prishtine','Prizren','Rahovec'];
+        var y = vargu.length;
+        var z = '';
+        var a = vargu.sort();
+        for(x=0;x<y;x++)
+    {
+        z+=vargu[x]+' eshte '+(x+1)+'<br>';
+    }
+    document.getElementById('p2').innerHTML = z;
+    </script>
+
+    <p id="p3" style="color: blue;"></p>
+    <script>
+    var vargu = ['Ferizaj','Gjakove','Malisheve','Prishtine','Prizren','Rahovec'];
+    var y = vargu.length;
+    var z = '';
+    var a = vargu.sort().reverse();
+    for(x=0; x<y; y--)
+    {
+        z+=vargu[y-1]+' eshte '+(y)+'<br>';
+    }
+    document.getElementById('p3').innerHTML = z;
+    </script>
+</body>
+</html>
